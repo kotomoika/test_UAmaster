@@ -43,7 +43,7 @@
 	width: 200px;
 	position: relative;
 	top: -50px;
-	left: 30px;
+	left: -20px;
 	z-index: 3;
 }
 
@@ -60,10 +60,23 @@
 input.search:focus {outline: none;}
 input.search::-webkit-input-placeholder {color:#4B5153;}
 
+
 .content {
-    margin: 0px auto;
-    width: 87%;
-    max-width: 450px;
+ 	max-width: 450px;
+	margin-left: 4%;
+ }
+
+.content ul {
+ 	padding: 0;
+ 	list-style-position: inside;
+}
+
+
+
+.center-content {
+ 	margin: 0 auto;
+ 	max-width: 500px;
+ 	width: 100%;
 }
 
 .row {
@@ -89,6 +102,7 @@ input.search::-webkit-input-placeholder {color:#4B5153;}
 	border-color: #161A1B;
 	border-radius: 0px;
 	max-height: 48px;
+	padding-left: 2%;
 }
 
 .mb-head {width: 130px;}
@@ -305,11 +319,13 @@ h4 {
 
 .footer p {
 	margin-bottom: 10px;
+	font-size: 9pt;
 }
  .footer h6 {
  	color: #929C9F;
  	margin-bottom: 30px;
  	margin-top: 50px;
+ 	font-weight: bold;
  }
 
 .social {
@@ -551,22 +567,6 @@ h4 {
 
  .inl > .dropdown-money{
  	display: inline-block;
- }
-
- .content ul {
- 	padding: 0;
- 	list-style-position: inside;
- }
-
- .content {
- 	max-width: 500px;
- 	margin-left: 4%;
- }
-
- .center-content {
- 	margin: 0 auto;
- 	max-width: 500px;
- 	width: 100%;
  }
 
  .map {
