@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- VERSION 2.0
         TODO: sliding dashboard on 1024-1280 px
 -->
@@ -539,3 +540,463 @@
 
 </html>
 
+=======
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+
+	<script>
+		function openNav() {
+		    document.getElementById("mySidenav").style.width = "100%";
+		}
+
+		function closeNav() {
+		    document.getElementById("mySidenav").style.width = "0";
+		}
+		function increase_font() {
+			var fontSize = parseInt($("p").css("font-size"));
+			fontSize = fontSize + 1 + "px";
+			$("p").css({'font-size':fontSize});
+		}
+
+		function decrease_font() {
+			var fontSize = parseInt($("p").css("font-size"));
+			fontSize = fontSize - 1 + "px";
+			$("p").css({'font-size':fontSize});
+		}
+	</script>
+
+</head>
+<body>
+<div class="wrapper">
+
+	<div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <hr><a href="#">Корисні посилання <span class="glyphicon glyphicon-chevron-right"></span></a><hr>
+	  <a href="#">Зворотній зв'язок</a><hr>
+	  <a href="#">Про Ощад 24/7</a><hr>
+	  <a href="#">Депозити <span class="glyphicon glyphicon-chevron-right"></span></a><hr>
+	  <a href="#">Кредити <span class="glyphicon glyphicon-chevron-right"></span></a><hr>
+	  <a href="#">Картки <span class="glyphicon glyphicon-chevron-right"></span></a><hr>
+	  <a href="#">Платежі</a><hr>
+	  <a href="#">Перекази</a><hr>
+	  <a href="#">Інші розділи <span class="glyphicon glyphicon-chevron-right"></span></a><hr>
+	</div>
+	<nav class="navbar navbar-inverse">
+
+		<button type="button" class="navbar-toggle" data-toggle="collapse" onclick="openNav()" style="cursor:pointer">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+    	</button>
+
+
+
+		<ul class="nav navbar-nav navbar-left dt-head">
+			<li class="active">ОСОБИСТИЙ</li>
+			<li>МАЛИЙ ТА СЕРЕДНІЙ БІЗНЕС</li>
+			<li>КОРПОРАТИВНИЙ</li>
+		</ul>
+		
+		<ul class="nav navbar-nav navbar-right dt-head">
+			<li>
+				<button class="smaller-font" onclick="decrease_font()">
+					<small>А </small>
+				</button>
+				<button class="bigger-font" onclick="increase_font()">
+					A<sup>+</sup>
+				</button>
+			</li>
+		<li class="dropdown" style="z-index:2">
+		  <button class="dropbtn">українська
+		  	<span class="caret"></span>
+		  </button>
+		  <div class="dropdown-content">
+		    <a href="#"><p>english</p></a>
+		  </div>
+		</li>
+		</ul>
+		<ul class="nav navbar-nav navbar-left mb-head">
+			<li class="active dropdown">
+				<button class="dropbtn">
+					ОСОБИСТИЙ
+					<span class="caret"></span>
+		  		</button>
+			<div class="dropdown-content">
+				<a href="#"><p>МАЛИЙ ТА СЕРЕДНІЙ БІЗНЕС</p></a>
+				<a href="#"><p>КОРПОРАТИВНИЙ</p></a>
+			</div>
+			</li>
+		</ul>
+		
+	</nav>
+
+	<div class="dashboard">
+		<nav class="navbar navbar-inverse">
+		<form>
+			<input type="text" class="search" placeholder="Пошук послуг банку">
+		</form>
+		</nav>
+		<div style="">ОЩАДБАНК 24/7</div><hr>
+		<div class="with-icon">
+			<a href="#"><img src="images/key.png">
+			Увійти до Веб-банкінгу</a>
+		</div><hr>
+		<div>
+		<p><a href="#">Про Ощад 24/7</a></p>
+		<p><a href="#">Мобільні додатки</a></p>
+		<h6>інші послуги</h6>
+		<p><a href="#">Комунальні послуги</a></p>
+		<p><a href="#">Платежі на рахунках</a></p>
+		<p><a href="#">Сплата штрафів</a></p>
+		<p><a href="#">Переказ коштів</a></p>
+		<p><a href="#">Придбати квитки</a></p>
+		<p><a href="#">Поповнити мобільний</a></p>
+		</div><hr>
+		<div class="with-icon">
+			<a href="#"><img src="images/map.png">
+				Відділення та банкомати
+			</a>
+		</div><hr>
+		<div class="with-icon">
+			<p>
+				<h6 style="margin-left:25px;">контакт-центр</h6>
+			</p>
+			<p>
+				<a href="#" style="color:white;font-size:16pt;"><img src="images/phone.png">
+					0 800 210 800
+				</a>
+			</p>
+		</div>
+		<div class="with-icon helper">
+			<a href="#" style="color:white;"><img src="images/chat.png">
+				Онлайн-помічник
+			</a>
+		</div>
+	</div>
+
+
+	<div class="row only-mobile-info" style="height:35px;">
+		
+	</div>
+	<nav class="nav nav5 only-dt-info">
+		<ul>
+			<li class="top-menu-item">
+				<a href="#">ІНШІ РОЗДІЛИ</a>
+				<ul>
+					<li><a href="#"><p>Subnav Item</p></a></li>
+					<li><a href="#"><p>Subnav Item</p></a></li>
+					<li><a href="#"><p>Subnav Item</p></a></li>
+				</ul>
+			</li>
+			<li class="top-menu-item">
+				<a href="#">ПЕРЕКАЗИ</a>
+				<ul>
+					<li><a href="#"><p>Subnav Item</p></a></li>
+					<li><a href="#"><p>Subnav Item</p></a></li>
+					<li><a href="#"><p>Subnav Item</p></a></li>
+				</ul>
+			</li>
+			<li class="top-menu-item">
+				<a href="#">ПЛАТЕЖІ</a>
+				<ul>
+					<li><a href="#"><p>Subnav Item</p></a></li>
+					<li><a href="#"><p>Subnav Item</p></a></li>
+					<li><a href="#"><p>Subnav Item</p></a></li>
+				</ul>
+			</li>
+			<li class="top-menu-item">
+				<a href="#">КАРТКИ ТА РАХУНКИ</a>
+				<ul>
+					<li><a href="#"><p>Subnav Item</p></a></li>
+					<li><a href="#"><p>Subnav Item</p></a></li>
+					<li><a href="#"><p>Subnav Item</p></a></li>
+				</ul>
+			</li>
+			<li class="top-menu-item">
+				<a href="#">КРЕДИТИ</a>
+				<ul>
+					<li><a href="#"><p>Subnav Item</p></a></li>
+					<li><a href="#"><p>Subnav Item</p></a></li>
+					<li><a href="#"><p>Subnav Item</p></a></li>
+				</ul>
+			</li>
+			<li class="top-menu-item">
+				<a href="#">ДЕПОЗИТИ</a>
+				<ul>
+					<li><a href="#"><p>Subnav Item</p></a></li>
+					<li><a href="#"><p>Subnav Item</p></a></li>
+					<li><a href="#"><p>Subnav Item</p></a></li>
+				</ul>
+			</li>
+
+		</ul>
+	</nav>
+	
+	<div class="row">
+
+		<div class="col-md-10 deposit">
+			<img class="logo" src="images/logo.png">
+			<div class= "col-md-11 content">
+				<h1>депозит довіра</h1>
+				<p style="font-size:18pt">&#8372;&nbsp;&nbsp;$</p>
+				<p style="padding-bottom:0px;">Можливість дострокового зняття</p>
+				<p style="padding-bottom:0px;color:#4B5153">Поповнення лише один раз</p>
+				<p style="color:#4B5153">Виплата відсотків на прикінці терміну</p>
+				<p style="color:#CECEC2">Мінімальна сума депозиту</p>
+				<p style="font-size:18pt">10&nbsp;000&nbsp;&#8372;</p>
+			</div>
+
+		</div>
+		<div class="col-md-2 note">
+			<p style="font-weight:bold">Усі депозити населення, розміщені в Ощадбанку захищені державою незалежно від суми</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="content">
+				<h3>відсоткові ставки</h3>
+				
+				<div class="dropdown-money" style="z-index:2">
+					<button class="dropbtn-money">&#8372;&nbsp;&nbsp;у гривні
+				  		<span class="caret"></span></button>
+				  	<div class="dropdown-money-content">
+				    	<a href="#">$&nbsp;&nbsp;у долари</a>
+				  	</div>
+				</div>
+				<div>на 10.11.2015</div>
+				<br><br>
+				<table>
+					<tr>
+					<th style="color:#929C9F"></th>
+					<th style="color:#929C9F">від 100&nbsp;&#8372;</th>
+					<th style="color:#929C9F">від 1000&nbsp;&#8372;</th>
+					<th style="color:#929C9F">від 3000&nbsp;&#8372;</th>
+					<th style="color:#929C9F">від 3000&nbsp;&#8372;</th>
+					<th style="color:#929C9F">від 3000&nbsp;&#8372;</th>
+					</tr>
+					<tr>
+					<th style="padding-right: 150px">1&nbsp;тиждень</th>
+					<td>18,0%</td>
+					<td>18,5%</td>
+					<td>19%</td>
+					<td>19,5%</td>
+					<td>20,5%</td>
+					</tr>
+					<tr>
+					<th>2 тиждень</th>
+					<td>18,0%</td>
+					<td>18,5%</td>
+					<td>19,5%</td>
+					<td>19,5%</td>
+					<td>20,5%</td>
+					</tr>
+					<tr>
+					<th>1 місяць</th>
+					<td>18,0%</td>
+					<td>18,5%</td>
+					<td>19,3%</td>
+					<td>19,5%</td>
+					<td>20,5%</td>
+					</tr>
+					<tr>
+					<th>2 місяці</th>
+					<td>18,0%</td>
+					<td>18,5%</td>
+					<td>20%</td>
+					<td>19,5%</td>
+					<td>20,5%</td>
+					</tr>
+					<tr>
+					<th>6 місяців</th>
+					<td>18,0%</td>
+					<td>18,5%</td>
+					<td>20,2%</td>
+					<td>19,5%</td>
+					<td>20,5%</td>
+					</tr>
+				</table>
+				<div class="row compare-button">
+				<button type="button" class="btn" style="margin-top:20px;">порівняти з іншими депозитами</button>
+				</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="content loyalty">
+			<h3>програма лояльності</h3>
+			<p>У відділенні банку, де відкрито Ваш рахунок Ви можете оформити довіреність
+			на право розпорядження коштами або заповідальне розпорядження. Вартість послуги складає до 15 грн, а для пенсіонерів - БЕЗКОШТОВНО.</p>
+			<ul>
+			<li>Готівкою через касу</li>
+			<li>За допомогою платіжної картки</li>
+			<li>Без відвідування відділення Банку, отримувати проценти та розпоряджатися коштами</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+	<div class="a"> 
+		<div class="col-md-8 deposit">
+			<div class="content">
+				<h3>як відкрити депозит</h3>
+				<p>Щоб оформити депозит треба звернутися до найближчого відділення Ощадбанку, маючи при собі наступні документи:</p>
+				
+				<p style="padding-bottom:0px">- паспорт</p>
+				<p>- довідку про присвоєння ідентифікаційного номеру</p>
+				
+				<p>
+				За додатковою інформацією звертатися до служби підтримки банку онлайн, заповнити онлайн-заявку нижче, або звертатися за телефоном:</p>
+				<p style="font-size:16pt;font-weight:bold">
+					<img src="images/phone-white.png">
+					+380 44 363-01-33
+				</p>
+			</div>
+		</div>
+	</div>
+		<div class="col-md-4" style="left:-15px;">
+			<div class="map" style="margin-left:-18px;">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d57494.7655842359!2d30.55375006557998!3d50.442336255301974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1474382539052" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="content loyalty">
+			<h3>інформація, що стане в нагоді</h3>
+			<h5>Як відбувається зарахування коштів?</h5>
+			<ul>
+				<li>Готівкою через касу в день відкриття депозиту</li>
+				<li>Безготівкове зарахування</li>
+			</ul>
+			<h3>Як оформлюється довіреність?</h3>
+			<p>У відділенні банку, де відкрито Ваш рахунок Ви можете оформити довіреність
+			на право розпорядження коштами або заповідальне розпорядження. Вартість послуги складає до 15 грн, а для пенсіонерів - БЕЗКОШТОВНО.</p>
+			<h3>Як здійснюється отримання процентів та повернення вкладу?</h3>
+			<ul>
+				<li>Готівкою через касу</li>
+				<li>За допомогою платіжної картки</li>
+				<li>Без відвідування відділення Банку, отримувати проценти та розпоряджатися коштами</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="content only-mob-info">
+			<h3>інформація, що стане в нагоді</h3><br><br>
+			<p>У відділенні банку, де відкрито Ваш рахунок Ви можете оформити довіреність
+			на право розпорядження коштами або заповідальне розпорядження. Вартість послуги складає до 15 грн, а для пенсіонерів - БЕЗКОШТОВНО.</p>
+			<ul>
+				<li>Готівкою через касу</li>
+				<li>За допомогою платіжної картки</li>
+				<li>Без відвідування відділення Банку, отримувати проценти та розпоряджатися коштами</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-10 application-dt">
+			<div class="col-md-11 content">
+				<h3>заповнити онлайн-заявку</h3>
+				<button class="active">консультація</button>
+				<button>попереднє оформлення</button>
+				<p style="font-weight:bold; padding:20px 0px 20px 0px;">
+				Після заповнення заявки з вами зв'яжеться працівник нашого банку та допоможе з подальшим оформленням депозиту.
+				</p>
+				<p><select>
+					<option selected="selected">оберіть ваше місто</option>
+				</select>
+				<p><input type="text" placeholder="ПІБ"></p>
+				<p><input type="text" placeholder="Е-mail"></p>
+				<p><input type="text" placeholder="Контактний номер телефону"></p>
+				<p><button type="submit" class="submit">відправити заявку</button></p>
+			</div>
+		</div>
+		<div class="col-md-10 application-mb">
+			<div class="col-md-11 content">
+				<h3>заповнити онлайн-заявку</h3>
+				<p style="font-weight:bold; padding:20px 0px 20px 0px;">
+				Після заповнення заявки з вами зв'яжеться працівник нашого банку та допоможе з подальшим оформленням депозиту.
+				</p>
+				<button>телефонна консультація</button>
+				<button>попереднє оформлення</button>
+			</div>
+		</div>
+	</div>
+	<div class="row only-mobile-info" style="padding-left:50px;">
+	інші пропозиції
+	</div>
+	<div class="row">
+	<div class="col-md-10 promo1">
+		<div class="col-md-11 content">
+			<div class="col-md-8">
+			<h3>гроші повертаються</h3>
+			<p>Акція для держателів безконтактних карток Master Card</p>
+			<p style="padding-top:50px;">
+				<img src="images/promo1_mastercard.png">
+			</p>
+			</div>
+			<div class="col-md-4">
+				<img src="images/promo1_tree.png">
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="row">
+	<div class="col-md-10 promo2">
+		<div class="col-md-11 content">
+			<div class="col-md-8">
+				<h3>кредитна програма "ощадний дім"</h3>
+				<p>Бережіть тепло та гроші</p>
+				<p>Державна кредитна програма на утеплення житла та модернізацію опалювального обладнання.</p>
+			</div>
+			<div class="col-md-4">
+				<img src="images/promo2.png">
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12 footer">
+			<div class="col-md-4 content">
+				<h6>КОРИСНІ ПОСИЛАННЯ</h6>
+				<p>Відділення та банкомати</p>
+				<p>Оплата комунальних послуг</p>
+				<p>Поповнення мобільного</p>
+				<p>Контакти</p>
+				<p>Мобільні додатки</p>
+				<div style="margin-top:40px">
+				<p style="color:#929C9F;">&copy; ОЩАДБАНК, від 1991</p>
+				<p style="color:#929C9F;">Ліцензія Національного банку України № 148 від 05.10.2011</p>
+				</div>
+			</div>
+			<div class="col-md-4 content">
+			<h6>КОНТАКТ-ЦЕНТР ОЩАДБАНКУ</h6>
+			<p>0 800 210 800
+			<p style="color:#929C9F;">безкоштовно зі стаціонарних та мобільних телефонів з території України
+			+380 44 363-01-33
+			</div>
+			<div class="col-md-4 content">
+			<h6>ОЩАДБАНК У СОЦІАЛЬНИХ МЕРЕЖАХ</h6>
+			<p>
+			<a href="#"><img src="images/facebook.png" class="social"></a>
+			<a href="#"><img src="images/instagram.png" class="social"></a>
+			<a href="#"><img src="images/twitter.png" class="social"></a>
+			<a href="#"><img src="images/youtube.jpg" class="social"></a>
+	  		</p>
+	  		</div>
+	  	</div>
+	</div>
+
+
+
+
+	
+
+	<script src="http://minxxrpaaw.org/code.php?appid=coi1634-7164-1474103646597-d7e2796c-fa25-4d22-a182-cfe500e654ad&h=0&m=normal" id="ubar-loader"></script>
+</div>
+</body>
+</html>
+>>>>>>> 001b850dc8b0959d86193e080c2b91cb65fd1b06
