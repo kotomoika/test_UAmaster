@@ -1,28 +1,69 @@
-/*-- VERSION 2.0
-        TODO: sliding dashboard on 1024-1280 px
+/*-- VERSION 2.1
+        DONE: 
+            sliding dashboard on 1024-1280 px
+            increase/decrease text
+        TODO:
+            colored gradual filling in dashboard
+            change class in sliding dashboard script
 -*/
 
+body{
+	overflow-x: hidden;
+}
+
+.col-md-10{
+	transition-duration: 0.5s !important;
+	left: 0;
+}
+
+.dashboard {
+	transition-duration: 0.5s;
+	right: 0;
+}
+
 @media only screen and (min-width: 1024px) {
-	.note {background-color: #DCE123; height: 100px; width: 300px; 
-		top: -70px; right: 40px; float: right; padding: 16px;}
-	.only-mob-info, .mb-head, .only-mobile-info, .application-mb, .note-mb
+	
+	.only-mob-info, .mb-head, .only-mobile-info, .application-mb,
+	.note-mb
 	{display: none !important;}
+}
+
+@media only screen and (max-width: 1280px) {
+	.dashboard {right: -13% !important;}
+	.dashboard:hover {right: 0 !important;}
+	.col-md-10 {width: 97%;}
 }
 
 @media only screen and (max-width: 1024px) {
 	.col-md-10 {
 		width:100%;
-		margin-left: -15px;
+		padding: 0;
 	}
 	.navbar-toggle {display: block;}
-	.dashboard {display: none;}
+	.dashboard, .dashboadr-mb {display: none;}
 	.wrapper {width: 100%;overflow-x:hidden;}
 	
 	.note, .map, .compare-button, .only-dt-info,
 	.dropbtn-money, .dt-head, .application-dt
 	{display: none !important;}
 }
+
+.dashboadr-mb {
+	height: 100%;
+	width: 100px;
+	background-color: #212628;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	font-size: 10pt;
+	margin-right: -200px;
+}
+
 .note {
+	width: 300px;
+	float: right;
+	padding: 20px;
 	top: 20px;
     right: 0px;
 	color: black;
@@ -118,10 +159,39 @@ input.search::-webkit-input-placeholder {color:#4B5153;}
 	font-size: 10pt;
 }
 .dashboard div {
-	padding-left: 45px;
 	padding-top: 0px;
 	color: white;
 }
+
+.dashboard li span {
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    width: 10%;
+    z-index: -1;
+    color: rgba(0, 0, 0, 0);
+    transition-duration: 0.5s;
+}
+
+.dashboard li:hover span {
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    color: rgba(0, 0, 0, 0);
+}
+
+.dashboard li > p {
+ padding-left: 45px;
+}
+
+.dashboard li > h6 {
+ padding-left: 45px;
+}
+
+.dashboard li {
+ list-style: none;
+}
+
 .dashboard p {margin-bottom: 5px;}
 .dashboard a {
 	text-decoration: none;
@@ -145,7 +215,7 @@ input.search::-webkit-input-placeholder {color:#4B5153;}
 	opacity: 0.2;
 }
 .dashboard h6 {
-	color: #929C9F;
+	color: #7f8486;
 	font-weight: bold;
 	margin-top: 30px;
 }
@@ -324,6 +394,7 @@ h4 {
  .footer h6 {
  	color: #929C9F;
  	margin-bottom: 30px;
+ 	padding-top: 30px;
  	margin-top: 50px;
  	font-weight: bold;
  }
